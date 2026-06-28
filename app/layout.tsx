@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   title: "دسترسی آسان به هوش مصنوعی",
   description: "لیست پلتفرم‌های رایگان هوش مصنوعی",
   openGraph: {
-    title: "free-ai",
+    title: "ez ai access / free models",
     description: "لیست پلتفرم‌های رایگان هوش مصنوعی",
-    siteName: "free-ai",
+    siteName: "ez ai access / free models",
     type: "website",
     locale: "fa_IR",
   },

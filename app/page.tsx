@@ -36,7 +36,7 @@ export default function Home() {
             <p className="mt-4">
               اگه خواستی چیزی اضافه کنی یه pull request به{" "}
               <a
-                href="https://github.com/yazdanctx/free-ai"
+                href="https://github.com/yazdanctx/ez-ai-access"
                 className="text-blue-400"
                 target="_blank"
               >
