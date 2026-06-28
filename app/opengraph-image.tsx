@@ -8,45 +8,44 @@ export const contentType = "image/png";
 
 export default async function Image() {
   const fontData = await readFile(
-    join(process.cwd(), "app/fonts/IRANYekanXFaNum-Bold.woff")
+    join(process.cwd(), "app/fonts/IRANYekanXFaNum-Bold.woff"),
   );
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        background: "#000",
+        color: "#fff",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "80px",
+      }}
+    >
       <div
         style={{
-          width: "100%",
-          height: "100%",
-          background: "#000",
-          color: "#fff",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "80px",
+          fontSize: 80,
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
         }}
       >
-        <div
-          style={{
-            fontSize: 80,
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-          }}
-        >
-          free-ai
-        </div>
-        <div
-          style={{
-            fontSize: 28,
-            color: "#a1a1aa",
-            marginTop: 24,
-            textAlign: "center",
-          }}
-        >
-          لیست پلتفرم‌های رایگان هوش مصنوعی
-        </div>
+        دسترسی رایگان به هوش مصنوعی
       </div>
-    ),
+      <div
+        style={{
+          fontSize: 28,
+          color: "#a1a1aa",
+          marginTop: 24,
+          textAlign: "center",
+        }}
+      >
+        بچهای کامیونیتی اینور اونور API های رایگان هوش مصنوعی رو میذارن. فعلا
+        اینجارو برای دسترسی ساده تر درست کردم و منابع خوبی رو که ببینم میذارم.
+      </div>
+    </div>,
     {
       ...size,
       fonts: [
@@ -57,6 +56,6 @@ export default async function Image() {
           weight: 700,
         },
       ],
-    }
+    },
   );
 }
